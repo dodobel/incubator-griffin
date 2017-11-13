@@ -393,6 +393,7 @@ export class AcComponent implements OnInit {
             this.currentDB = node.data.name;
             this.currentDBstr = this.currentDB + '.';
             this.currentTable = '';
+            this.schemaCollection = [];
             TREE_ACTIONS.TOGGLE_EXPANDED(tree, node, $event);
           }
           else if(node.data.cols)
@@ -425,6 +426,7 @@ export class AcComponent implements OnInit {
             this.currentDBTarget = node.data.name;
             this.currentDBTargetStr = this.currentDBTarget + '.';
             this.currentTableTarget = '';
+            this.schemaCollectionTarget = [];
             TREE_ACTIONS.TOGGLE_EXPANDED(tree, node, $event);
           }
           else if(node.data.cols)
